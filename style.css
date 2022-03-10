@@ -86,7 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -106,7 +105,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 blockquote,
@@ -118,7 +117,6 @@ blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none;
 }
 table {
   border-collapse: collapse;
@@ -258,6 +256,7 @@ h1 {
   text-align: center;
 }
 .left-block__personal_info p {
+  text-align: center;
   margin-top: 1rem;
 }
 .left-block__personal_info ul {
@@ -370,6 +369,9 @@ h1 {
   .left-block__personal_info h1 {
     text-align: inherit;
   }
+  .left-block__personal_info p {
+    text-align: left;
+  }
   .right-block {
     margin-top: 0;
     max-width: 460px;
@@ -409,8 +411,6 @@ h1 {
     min-width: 115px;
     max-width: 115px;
   }
-}
-@media screen and (max-width: 768px) {
 }
 @keyframes fadeInLeft {
   from {
